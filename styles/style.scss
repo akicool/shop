@@ -1,6 +1,7 @@
 $pp: 'Inter';
 $side-text-color: #425466;
 $h-title-color: #27272E;
+$all-p-color: #1F2D3D;
 
 a {
     text-decoration: none;
@@ -67,11 +68,15 @@ button {
     }
 }
 
+.content {
+    max-width: 1170px;
+    width: 100%;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1170px;
     height: 99px;
     width: 100%;
     border-bottom: 2px solid #EDF2F7;
@@ -106,5 +111,47 @@ button {
         font-weight: 600;
         font-size: 14px;
         line-height: 12px;
+    }
+}
+
+.search {
+    display: block;
+    height: 73px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $side-text-color;
+        margin-bottom: 8px;
+    }
+    &__input {
+    }
+}
+.input {
+    background: #EDF2F7;
+    border-radius: 6px;
+    border: none;
+
+    max-width: 334px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+}
+
+.all-products {
+    margin-top: 24px;
+    margin-left: 30px;
+    height: 60px;
+    border-bottom: 2px solid #EDF2F7;
+
+    &__text {
+        margin-left: 24px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $all-p-color;
     }
 }
