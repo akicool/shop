@@ -118,7 +118,7 @@
             <div class="row">
                 <div class="col-xxl-8">
                         <footer class="footer">
-                            <div class="footer__list col-xxl-5">
+                            <div class="footer__list col-xxl-4">
                                 <div class="footer__item">
                                     <img src="product_img/reload.svg" alt="reload">
                                     <div class="footer__text">Оформить возврат</div>
@@ -139,22 +139,22 @@
                         <div class="calculator__block">
                             <div class="increment">
                                 <div class="increment__text">Кол-во</div>
-                                <button class="increment__btn"><img src="product_img/plus.svg" alt=""></button>
-                                <input type="number" class="increment__input">
-                                <button class="increment__btn"><img src="product_img/dash.svg" alt=""></button>
+                                <button class="increment__btn" id="btn-icrement"><img src="product_img/plus.svg" alt=""></button>
+                                <input type="number" class="increment__input" value="0">
+                                <button class="increment__btn" id="btn-decrement"><img src="product_img/dash.svg" alt=""></button>
                             </div>
                             <div class="amount">
                                 <div class="amount__item">
                                     <div class="amount__text">К оплате</div>
-                                    <div class="amount__num">570</div>
+                                    <div class="amount__num" id="to-be-paid">0</div>
                                 </div>
                                 <div class="amount__item">
-                                    <div class="amount__text">К оплате</div>
-                                    <div class="amount__num">600</div>
+                                    <div class="amount__text">Получено</div>
+                                    <div class="amount__num" id="received">0</div>
                                 </div>
                                 <div class="amount__item">
-                                    <div class="amount__text">К оплате</div>
-                                    <div class="amount__num">30</div>
+                                    <div class="amount__text">Сдача</div>
+                                    <div class="amount__num" id="change">0</div>
                                 </div>
                             </div>
                         </div>
@@ -186,5 +186,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
